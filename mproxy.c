@@ -162,7 +162,7 @@ int read_header(int fd, void * buffer)
             return HEADER_BUFFER_FULL;
         }
 
-        //读到了空行，http头结束
+        //读到了空行，http header结束
         if(strcmp(line_buffer,"\r\n") == 0 || strcmp(line_buffer,"\n") == 0)
         {
             break;
